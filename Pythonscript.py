@@ -6,4 +6,5 @@ xds_match = xarray.open_dataarray(r"/Users/ihasan/Downloads/TAMU/TTI_project/dem
 
 xds_repr_match = xds.rio.reproject_match(xds_match, nodata=-1)
 
+## Exporting the processed matched raster to tif file
 xds_repr_match.rio.to_raster(os.path.join(file_dir, 'rasterize', 'test1.tif'))
